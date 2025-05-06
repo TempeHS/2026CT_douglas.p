@@ -1,3 +1,6 @@
 .navbar-brand img {
   height: 80px;
 }
+.carousel-inner img {
+  height: 400px;
+}
