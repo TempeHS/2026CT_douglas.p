@@ -3,18 +3,15 @@ from flask import render_template
 
 app = Flask(__name__)
 
-@app.route('/index.html')
+@app.route('/aboutthesite.html')
 @app.route('/')
-def index():
+def aboutthesite():
     card_data = (
         ("The Talt","One of the first alien races humanity encountered", "come visit", "static/images/the talt.png"),
         ("Star-Ships", "The wonderous star ships", "Take a look", "static/images/Spaceships.png"),
         ("Humainity","we were born on this rock, we wont die here ", "see how far we have come", "static/images/we were born here.png"),
-        ("The Talt","One of the first alien races humanity encountered", "come visit", "static/images/the talt.png"),
-        ("Star-Ships", "The wonderous star ships", "Take a look", "static/images/Spaceships.png"),
-        ("Humainity","we were born on this rock, we wont die here ", "see how far we have come", "static/images/we were born here.png"),
     )
-    return render_template("index.html", cards=card_data), 200
+    return render_template("aboutthesite.html", cards=card_data), 200
 
 @app.route('/contact.html')
 def contact():

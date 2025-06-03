@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     {% for card in cards %}
-    <div class="col">
+    <div class="col-lg-4 col-md-8 col-sm-12">
       <div class="card">
         <img src="{{ card [3] }}" class="card-img-top" alt="..." />
         <div class="card-body">
@@ -13,6 +13,12 @@
       </div>
     </div>
     {% endfor %}
+    <div class="col-lg-3 col-md-8 col-sm-12">
+      <button type="button" class="btn">Base class</button>
+      <button type="button" class="btn">Base class</button>
+      <button type="button" class="btn">Base class</button>
+      <button type="button" class="btn">Base class</button>
+    </div>
   </div>
 </div>
 {%endblock%}
