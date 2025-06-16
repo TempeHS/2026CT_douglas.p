@@ -33,6 +33,25 @@ def world3():
 def world4():
     return render_template("world4.html"), 200
 
+@app.route('/earth.html')
+def earth():
+    return render_template("earth.html"), 200
+
+@app.route('/fartworld.html')
+def fartworld():
+    return render_template("fartworld.html"), 200
+
+@app.route('/redworld.html')
+def redworld():
+    return render_template("redworld.html"), 200
+
+@app.route('/skult.html')
+def skult():
+    return render_template("skult.html"), 200
+
+@app.route('/generalinfo.html')
+def generalinfo():
+    return render_template("generalinfo.html"), 200
 
 
 if __name__ == '__main__':
