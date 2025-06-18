@@ -1,0 +1,16 @@
+<button id="darkModeToggle">Toggle Dark Mode</button>
+
+<script>
+const htmlElement = document.documentElement;
+const toggleButton = document.getElementById('darkModeToggle');
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+htmlElement.setAttribute('data-bs-theme', savedTheme);
+}
+toggleButton.addEventListener('click', () => {
+const currentTheme = htmlElement.getAttribute('data-bs-theme');
+const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+htmlElement.setAttribute('data-bs-theme', newTheme);
+localStorage.setItem('theme', newTheme); 
+});
+</script>

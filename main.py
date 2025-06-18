@@ -16,23 +16,6 @@ def aboutthesite():
 @app.route('/contact.html')
 def contact():
     return render_template("contact.html"), 200
-
-@app.route('/world1.html')
-def world1():
-    return render_template("world1.html"), 200
-
-@app.route('/world2.html')
-def world2():
-    return render_template("world2.html"), 200
-
-@app.route('/world3.html')
-def world3():
-    return render_template("world3.html"), 200
-
-@app.route('/world4.html')
-def world4():
-    return render_template("world4.html"), 200
-
 @app.route('/earth.html')
 def earth():
     return render_template("earth.html"), 200
