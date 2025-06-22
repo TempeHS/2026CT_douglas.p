@@ -1,16 +1,30 @@
 <button id="darkModeToggle">Toggle Dark Mode</button>
 
 <script>
-const htmlElement = document.documentElement;
-const toggleButton = document.getElementById('darkModeToggle');
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-htmlElement.setAttribute('data-bs-theme', savedTheme);
-}
-toggleButton.addEventListener('click', () => {
-const currentTheme = htmlElement.getAttribute('data-bs-theme');
-const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-htmlElement.setAttribute('data-bs-theme', newTheme);
-localStorage.setItem('theme', newTheme); 
-});
+  const htmlElement = document.documentElement;
+  const toggleButton = document.getElementById("darkModeToggle");
+  const logoImage = document.getElementById("logoImage");
+  const savedTheme = localStorage.getItem("theme");
+
+  function updateLogo(theme) {
+    if (logoImage) {
+      if (theme === "dark") {
+        logoImage.src = "static/images/LOGO-dark.png";
+      } else {
+        logoImage.src = "static/images/LOGO.png";
+      }
+    }
+  }
+
+  if (savedTheme) {
+    htmlElement.setAttribute("data-bs-theme", savedTheme);
+    updateLogo(savedTheme);
+  }
+  toggleButton.addEventListener("click", () => {
+    const currentTheme = htmlElement.getAttribute("data-bs-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    htmlElement.setAttribute("data-bs-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+    updateLogo(newTheme);
+  });
 </script>
