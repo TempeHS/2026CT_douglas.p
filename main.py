@@ -8,8 +8,8 @@ app = Flask(__name__)
 def aboutthesite():
     card_data = (
         ("The Talt","Come meet one of the first alien races humanity encountered", "visit", "static/images/the talt.png", "/talt.html"),
-        ("Star-Ships", "The wonderous star ships", "Take a look", "static/images/Spaceships.png"),
-        ("Humainity","we were born on this rock, we wont die here ", "see how far we have come", "static/images/we were born here.png"),
+        ("Star-Ships", "The wonderous star ships", "Take a look", "static/images/Spaceships.png", "/starships.html"),
+        ("Humainity","we were born on this rock, we wont die here ", "see how far we have come", "static/images/we were born here.png", "/humanity.html"),
     )
     return render_template("aboutthesite.html", cards=card_data), 200
 
@@ -39,6 +39,14 @@ def generalinfo():
 @app.route('/talt.html')
 def talt():
     return render_template("talt.html"), 200
+
+@app.route('/starships.html')
+def starships():
+    return render_template("starships.html"), 200
+
+@app.route('/humanity.html')
+def humanity():
+    return render_template("humanity.html"), 200
 
 
 if __name__ == '__main__':
