@@ -10,39 +10,66 @@
 
   <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/aboutthesite.html">about the site</a>
+            <a class="nav-link{% if active_page == 'aboutthesite' %} active{% endif %}" href="/aboutthesite.html">about the site</a>
+            {% if active_page == 'aboutthesite' %}
+            {% include 'partials/scrollspy.html' %}
+          {% endif %}
           </li>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/generalinfo.html">general info</a>
+          <a class="nav-link{% if active_page == 'generalinfo' %} active{% endif %}" href="/generalinfo.html">general info</a>
+          {% if active_page == 'generalinfo' %}
+          {% include 'partials/scrollspy.html' %}
+        {% endif %}
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/earth.html">earth</a>
+          <a class="nav-link{% if active_page == 'earth' %} active{% endif %}" href="/earth.html">earth</a>
+          {% if active_page == 'earth' %}
+            {% include 'partials/scrollspy.html' %}
+          {% endif %}
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/fartworld.html">fartworld</a>
+          <a class="nav-link{% if active_page == 'fartworld' %} active{% endif %}" href="/fartworld.html">fartworld</a>
+          {% if active_page == 'fartworld' %}
+          {% include 'partials/scrollspy.html' %}
+        {% endif %}
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/redworld.html">redworld</a>
+          <a class="nav-link{% if active_page == 'redworld' %} active{% endif %}" href="/redworld.html">redworld</a>
+          {% if active_page == 'redworld' %}
+          {% include 'partials/scrollspy.html' %}
+        {% endif %}
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/skult.html">skult</a>
+          <a class="nav-link{% if active_page == 'skult' %} active{% endif %}" href="/skult.html">skult</a>
+          {% if active_page == 'skult' %}
+          {% include 'partials/scrollspy.html' %}
+        {% endif %}
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/talt.html">talt</a>
+          <a class="nav-link{% if active_page == 'talt' %} active{% endif %}" href="/talt.html">talt</a>
+          {% if active_page == 'talt' %}
+          {% include 'partials/scrollspy.html' %}
+        {% endif %}
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/starships.html">starships</a>
+          <a class="nav-link{% if active_page == 'starships' %} active{% endif %}" href="/starships.html">starships</a>
+          {% if active_page == 'starships' %}
+          {% include 'partials/scrollspy.html' %}
+        {% endif %}
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/humanity.html">humanity</a>
+          <a class="nav-link{% if active_page == 'humanity' %} active{% endif %}" href="/humanity.html">humanity</a>
+          {% if active_page == 'humanity' %}
+          {% include 'partials/scrollspy.html' %}
+        {% endif %}
         </li>
 
         {% include 'partials/darkmode.html' %}
