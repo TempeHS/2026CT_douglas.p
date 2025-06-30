@@ -1,6 +1,6 @@
 {%extends 'layout.html'%} {%block content%} {%include "partials/slider.html"%}
 <div class="container">
-  <div class="row">
+  <div class="row card-row">
     {% for card in cards %}
     <div class="col-lg-4 col-md-8 col-sm-12">
       <div class="card">
@@ -13,26 +13,26 @@
       </div>
     </div>
     {% endfor %}
-    <div class="col-lg-6 col-md-8 col-sm-12">
-      <button type="button" class="btn w-100 p-0" onclick="window.location.href='/earth.html';"> 
-        <img src="static/images/world.png" alt="Button Image 1" style="width: 25%; height: 25%; object-fit: cover;">
-      </button>
-        
+    <div class="row mt-4 g-3">
+      <div class="col-lg-6 col-md-8 col-sm-12">
+        <button type="button" class="btn w-100 p-0 mb-3" onclick="window.location.href='/earth.html';"> 
+          <img src="static/images/world.png" alt="Button Image 1" style="width: 25%; height: 25%; object-fit: cover;">
+        </button>
         <button type="button" class="btn w-100 p-0" onclick="window.location.href='/redworld.html';"> 
           <img src="static/images/red world.png" alt="Button Image 1" style="width: 25%; height: 25%; object-fit: cover;">
         </button>
       </div>
-    <div class="col-lg-6 col-md-8 col-sm-12">
-      <button type="button" class="btn w-100 p-0" onclick="window.location.href='/skult.html';"> 
-        <img src="static/images/skult.png" alt="Button Image 1" style="width: 25%; height: 25%; object-fit: cover;">
-      </button>
-
-      <button type="button" class="btn w-100 p-0" onclick="window.location.href='/fartworld.html';"> 
-        <img src="static/images/fart world.png" alt="Button Image 1" style="width: 25%; height: 25%; object-fit: cover;">
-      </button>
+      <div class="col-lg-6 col-md-8 col-sm-12">
+        <button type="button" class="btn w-100 p-0 mb-3" onclick="window.location.href='/skult.html';"> 
+          <img src="static/images/skult.png" alt="Button Image 1" style="width: 25%; height: 25%; object-fit: cover;">
+        </button>
+        <button type="button" class="btn w-100 p-0" onclick="window.location.href='/fartworld.html';"> 
+          <img src="static/images/fart world.png" alt="Button Image 1" style="width: 25%; height: 25%; object-fit: cover;">
+        </button>
       </div>
     </div>
-  <div class="row">
+  </div>
+  <div class="row pb-4">
     <h2>About the site</h2>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh ligula, porttitor quis efficitur sodales, dapibus a dui. Vestibulum quis lacus elit. Cras vulputate sapien eget porttitor dignissim. Mauris eu faucibus nulla. Sed et nunc feugiat, tincidunt sapien et, pharetra libero. Vivamus porta purus nec nulla faucibus consequat. Donec mi libero, feugiat ac mi eu, feugiat vehicula purus. Integer at sagittis libero.
 

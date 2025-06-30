@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def aboutthesite():
     card_data = (
-        ("The Talt","Come meet one of the first alien races humanity encountered", "visit", "static/images/the talt.png", "/talt.html"),
+        ("The Talt","A amazing intelligent race", "visit", "static/images/the talt.png", "/talt.html"),
         ("Star-Ships", "The wonderous star ships", "Take a look", "static/images/Spaceships.png", "/starships.html"),
         ("Humanity","we were born on this rock, we wont die here ", "see how far we have come", "static/images/we were born here.png", "/humanity.html"),
     )
